@@ -12,6 +12,9 @@
 	<body>
 		<canvas id="canvas1" width="500" height="500"></canvas>
 		<p>新加的p标签</p>
+		<p>新加的p标签</p>
+		<p>新加的p标签</p>
+		<p>新加的p标签</p>
 	</body>
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -21,7 +24,7 @@
 		//linecap的属性值：butt  round    square
 
 		//填充和画边框的区别
-		
+
 		//fillstye = 颜色，渐变，img，canvas
 		//线性渐变色
 //		var jianbian = context.createLinearGradient(0,0,200,0);
@@ -32,7 +35,7 @@
 //		var jianbian = context.createRadialGradient(200,200,10,200,200,100);
 //		jianbian.addColorStop(0,0,"red");
 //		jianbian.addColorStop(1.0,"blue");
-//		
+//
 //		context.fillStyle = jianbian;
 //		context.fillRect(0,0,100,100);
 //		context.fill();
@@ -46,9 +49,9 @@
 //			context.fillText("sdfsfdsg",100,100);
 //			context.fill();
 //		}
-		
+
 //		linjoin的属性值 = bevel/round/miter
-		
+
 //			1.线的空闭合出出现空白问题的修复方法
 //				lineCap = "square";
 //				或者closePath()
@@ -63,7 +66,7 @@
 //				创建 xxx = context.createPattern(img , "repeat-style");
 //					其中img 也可以用 一个canvas对象来替换掉(其中这个canvas需要自己创建出来,或者从html文档中获得)
 //				fillStyle = xxx;
-//				
+//
 //				等fillStyle有了值之后 , 可以用在任何地方
 //				比如: fillRect(0 , 0 , 100 , 100)
 //					或者 fillText("jalkdsf" , 100 , 100);
@@ -78,13 +81,13 @@
 //				第四种方式:transform(a:H缩放 , b:H倾斜 , c:V倾斜 , d:V缩放 , e:H位移 , f:V位移)
 //					通过矩阵方式来转变,
 //					transform 也可以效果叠加
-//					
+//
 //					如果效果叠加太多,想回到初始效果状态,可以写下面一行代码:
 //						setTransform(1 , 0 , 0 , 1 , 0 , 0)
 //					setTransform 从初始状态开始改变效果
 //				7.曲线的绘制
 //				arc()
-//				arcTo()     
+//				arcTo()
 				//  arcTo(x1,y1,x2,y2,r)  x1,y1  控制点
 				//x2,y2  弧度的终止点（弧度的终止点是跟着半径来变化的）
 				//r   弧度的半径
@@ -94,13 +97,13 @@
 //				context.stroke();
 
 //				quadraticCurveTo()    二次贝塞尔曲线。前2个参数为控制点， 后两个参数为终点
-				
+
 //				bezierCurveTo()       三次贝塞尔曲线。 2个控制点
 //				context.moveTo(100,100)
 //				context.bezierCurveTo(150,10,250,190,300,100);
 //				context.strokeStyle="green";
 //				context.stroke();
-				
+
 				//圆角矩形
 				context.moveTo(100,120);
 				context.arcTo(100,300,300,300,20);
@@ -109,9 +112,9 @@
 				context.arcTo(100,100,100,200,20);
 				context.strokeStyle="green";
 				context.stroke();
-				
 
-				
+
+
 
 
 		});
